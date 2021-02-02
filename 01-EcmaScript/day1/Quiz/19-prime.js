@@ -5,7 +5,7 @@ function findPrime(lengthDeretPrime) {
     let counter=0
     for (let i = 0; i < lengthDeretPrime; i++) {
         for (let x = 1; x <= i; x++) {
-            if(i%x==0){  //cek semua bilangan i di modulus dengan 1 - x
+            if(i%x==0){  //cek semua bilangan i dimodulus dengan nilai 1 - x
                 counter++
             }
         }
