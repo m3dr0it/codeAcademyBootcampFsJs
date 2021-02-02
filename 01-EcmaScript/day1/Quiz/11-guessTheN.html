@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            let theN = Math.floor(Math.random()*20)
+            
+            let guessTheN = Number(prompt("Enter Number ( 0 - 20) : "))
+            let correct = guessTheN == theN 
+            while(!correct){
+                if(guessTheN<theN){
+                    alert("too Low, try again")
+                }else{
+                    alert("too High, try again")
+                }
+                guessTheN = Number(prompt("Enter Number ( 0 - 20) : "))
+                correct = guessTheN == theN
+            }
+            alert("Good Job, the Number is : "+theN)
+        </script>   
+    </body>
+</html>

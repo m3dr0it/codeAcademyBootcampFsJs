@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            let temp=0;
+            let counter = 0
+            let inputNumber = Number(prompt("Enter Number : "))
+            let max = inputNumber;
+            let min = inputNumber;
+            while (inputNumber != -99) {
+                if (max < inputNumber) {
+                    max = inputNumber
+                }
+                if (min > inputNumber) {
+                    min = inputNumber
+                }
+
+            inputNumber = Number(prompt("Enter Number : "))
+            }
+            alert("Largest : "+max+" Smallest:"+min+" ")
+        </script>   
+    </body>
+</html>

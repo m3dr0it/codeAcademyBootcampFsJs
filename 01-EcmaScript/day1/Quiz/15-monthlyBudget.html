@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            let monthlyBudget=0;
+            let cost = 0
+            let inputNumber = Number(prompt("Enter Your Monthly Budget : "))
+            let budget = inputNumber
+            while (inputNumber != -1) {
+                inputNumber = Number(prompt("Enter cost : (-1 to quit) "))
+                cost += inputNumber
+            }
+            let sisa = budget - cost
+            alert("Total budget : "+cost+" Sisa "+sisa)
+        </script>   
+    </body>
+</html>
