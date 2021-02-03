@@ -1,0 +1,32 @@
+@startuml classdiagram-car
+
+class Student{
+    +fullname
+    +city
+    +education
+    +grade
+    +batch
+    +type
+    +bootcamp
+    +skillPoint
+}
+
+class Beasiswa extends Student{
+    +insentif
+}
+
+class Reguler extends Student{
+    +netPrice
+}
+
+interface apiBootcamp{
+    +totalSiswa(listStudent)
+    +beasiswa()
+    +reguler()
+    +uangSaku()
+    +nodeJs()
+    +golang()
+    +python()
+}
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml classdiagram-car
+
+class Student{
+    +fullname
+    +city
+    +education
+    +grade
+    +batch
+    +skillPoint
+}
+
+class Bootcamp{
+    +year
+    +type
+}
+
+interface apiBootcamp{
+    +totalSiswa(listStudent)
+    +totalReguler()
+    +sumReguler()
+    +totalBeasiswa
+}
+
+interface apiCar{
+    +totalCar(listCar):Number
+}
+
+Main --> Car
+Main --> Taxi
+Main --> apiCar
+apiCar --> Car
+apiCar --> Taxi
+
+@enduml
